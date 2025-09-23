@@ -1,0 +1,528 @@
+<!doctype html>
+<!--
+* CoreUI Free React.js Admin Template
+* @version v5.4.0
+* @link https://coreui.io/product/free-react-admin-template/
+* Copyright (c) 2025 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://github.com/coreui/coreui-free-react-admin-template/blob/main/LICENSE)
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="CoreUI for React - Open Source Bootstrap Admin Template" />
+    <meta name="author" content="Łukasz Holeczek" />
+    <meta
+      name="keyword"
+      content="Bootstrap,Admin,Template,Open,Source,CSS,SCSS,HTML,RWD,Dashboard,React"
+    />
+    <title>Brand Maratha</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <style>
+      /* ──────────────────────── Image Alignments ──────────────────────── */
+      .image-style-align-left,
+      .image-style-side {
+        float: left;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+        max-width: 50%;
+      }
+
+      .image-style-align-center {
+        display: block;
+        margin: 0 auto 1rem auto;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .image-style-align-right {
+        float: right;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+        max-width: 50%;
+      }
+
+      .image-style-full {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+
+      /* ──────────────────────── General Blog Styling ──────────────────────── */
+      .blog-content img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* ──────────────────────── Editor Height ──────────────────────── */
+      .ck-editor__editable {
+        min-height: 300px;
+      }
+
+      /* ──────────────────────── Horizontal Line ──────────────────────── */
+      .ck-horizontal-line hr {
+        border: none;
+        border-top: 1px solid black;
+      }
+
+      /* ──────────────────────── YouTube Embed ──────────────────────── */
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 */
+        margin-bottom: 1rem;
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* ──────────────────────── Instagram Embed ──────────────────────── */
+      .instagram-embed {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        line-height: 0;
+      }
+
+      /* Reel Embed */
+      .instagram-embed.reel .iframe-container {
+        width: 70%;
+        max-width: 400px;
+        height: 700px; /* Fixed height for Reels */
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 1rem;
+      }
+
+      /* Post Embed */
+      .instagram-embed.post .iframe-container {
+        width: 70%;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 1rem;
+      }
+
+      /* Common iframe inside container */
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* ──────────────────────── Media Alignments ──────────────────────── */
+      .media-style-align-left,
+      .media-style-align-center,
+      .media-style-align-right {
+        display: flex;
+        margin-bottom: 1rem;
+        line-height: 0;
+      }
+
+      .media-style-align-left {
+        justify-content: flex-start;
+        text-align: left;
+      }
+
+      .media-style-align-center {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .media-style-align-right {
+        justify-content: flex-end;
+        text-align: right;
+      }
+
+      /* Optional: float for left-align Instagram */
+      .media-style-align-left .instagram-embed {
+        float: left;
+        /* margin-right: 1.5rem; */
+      }
+
+      /* Universal Content Block (use on admin editor wrapper & blog frontend wrapper) */
+      .blog-content,
+      .ck-editor__editable {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.7;
+        word-break: break-word;
+      }
+
+      /* All Headings (No need to target h1-h6 separately unless you want sizes) */
+      .blog-content h1,
+      .blog-content h2,
+      .blog-content h3,
+      .blog-content h4,
+      .blog-content h5,
+      .blog-content h6,
+      .ck-editor__editable h1,
+      .ck-editor__editable h2,
+      .ck-editor__editable h3,
+      .ck-editor__editable h4,
+      .ck-editor__editable h5,
+      .ck-editor__editable h6 {
+        margin: 1.5rem 0 0.8rem;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+
+      /* Paragraphs */
+      .blog-content p,
+      .ck-editor__editable p {
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+      /* Links */
+      .blog-content a,
+      .ck-editor__editable a {
+        color: #007bff;
+        text-decoration: underline;
+      }
+      .blog-content a:hover,
+      .ck-editor__editable a:hover {
+        color: #0056b3;
+        text-decoration: none;
+      }
+
+      /* Images */
+      .blog-content img,
+      .ck-editor__editable img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem 0;
+        border-radius: 6px;
+      }
+
+      /* Lists */
+      .blog-content ul,
+      .blog-content ol,
+      .ck-editor__editable ul,
+      .ck-editor__editable ol {
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+      }
+      .blog-content li,
+      .ck-editor__editable li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Blockquote */
+      .blog-content blockquote,
+      .ck-editor__editable blockquote {
+        border-left: 4px solid #ccc;
+        padding-left: 1rem;
+        margin: 1.5rem 0;
+        font-style: italic;
+        color: #666;
+      }
+
+      /* ─ Horizontal Rule */
+      .blog-content hr,
+      .ck-editor__editable hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 2rem 0;
+      }
+
+      /* Embedded Media (YouTube / Instagram / etc.) */
+      .blog-content iframe,
+      .ck-editor__editable iframe {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border: none;
+        display: block;
+        margin: 1.5rem 0;
+      }
+
+      /* Instagram iframe container (supports reels/posts without specific targeting) */
+      .blog-content .iframe-container,
+      .ck-editor__editable .iframe-container {
+        width: 100%;
+        max-width: 400px;
+        aspect-ratio: 4 / 5;
+        position: relative;
+        overflow: hidden;
+        margin: 1.5rem 0;
+      }
+
+      .blog-content .iframe-container.reel,
+      .ck-editor__editable .iframe-container.reel {
+        aspect-ratio: 9 / 16;
+      }
+
+      /* Embed iframe in container */
+      .blog-content .iframe-container iframe,
+      .ck-editor__editable .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: none;
+      }
+
+      /* Float or Align Wrapper for left/center/right */
+      .media-style-align-left,
+      .media-style-align-center,
+      .media-style-align-right {
+        display: flex;
+        margin-bottom: 1.5rem;
+      }
+
+      .media-style-align-left {
+        justify-content: flex-start;
+        text-align: left;
+      }
+
+      .media-style-align-center {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .media-style-align-right {
+        justify-content: flex-end;
+        text-align: right;
+      }
+
+      .media-style-align-left .instagram-embed,
+      .media-style-align-left .iframe-container {
+        float: left;
+        margin-right: 1.5rem;
+      }
+
+      /* ─────────────────────── Universal Wrapper ─────────────────────── */
+      .blog-content,
+      .ck-editor__editable {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.7;
+        word-break: break-word;
+      }
+
+      /* ─────────────────────── Headings ─────────────────────── */
+      .blog-content h1,
+      .ck-editor__editable h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 2rem 0 1rem;
+      }
+      .blog-content h2,
+      .ck-editor__editable h2 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin: 1.8rem 0 1rem;
+      }
+      .blog-content h3,
+      .ck-editor__editable h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1.6rem 0 1rem;
+      }
+      .blog-content h4,
+      .blog-content h5,
+      .blog-content h6,
+      .ck-editor__editable h4,
+      .ck-editor__editable h5,
+      .ck-editor__editable h6 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 1.5rem 0 0.8rem;
+      }
+
+      /* ─────────────────────── Paragraphs ─────────────────────── */
+      .blog-content p,
+      .ck-editor__editable p {
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+      /* ─────────────────────── Links ─────────────────────── */
+      .blog-content a,
+      .ck-editor__editable a {
+        color: #007bff;
+        text-decoration: underline;
+      }
+      .blog-content a:hover,
+      .ck-editor__editable a:hover {
+        color: #0056b3;
+        text-decoration: none;
+      }
+
+      /* ─────────────────────── Images ─────────────────────── */
+      .blog-content img,
+      .ck-editor__editable img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem 0;
+        border-radius: 6px;
+      }
+
+      /* ─────────────────────── Lists ─────────────────────── */
+      .blog-content ul,
+      .blog-content ol,
+      .ck-editor__editable ul,
+      .ck-editor__editable ol {
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+      }
+      .blog-content li,
+      .ck-editor__editable li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* ─────────────────────── Blockquotes ─────────────────────── */
+      .blog-content blockquote,
+      .ck-editor__editable blockquote {
+        border-left: 4px solid #ccc;
+        padding-left: 1rem;
+        font-style: italic;
+        color: #666;
+        margin: 1.5rem 0;
+      }
+
+      /* ─────────────────────── Horizontal Line ─────────────────────── */
+      .blog-content hr,
+      .ck-editor__editable hr,
+      .ck-horizontal-line hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 2rem 0;
+      }
+
+      /* ─────────────────────── Editor Height ─────────────────────── */
+      .ck-editor__editable {
+        min-height: 300px;
+      }
+
+      /* ─────────────────────── Image Alignments ─────────────────────── */
+      .image-style-align-left,
+      .image-style-side {
+        float: left;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+        max-width: 50%;
+      }
+
+      .image-style-align-center {
+        display: block;
+        margin: 0 auto 1rem auto;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .image-style-align-right {
+        float: right;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+        max-width: 50%;
+      }
+
+      .image-style-full {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+
+      /* ─────────────────────── Media Alignment ─────────────────────── */
+      .media-style-align-left,
+      .media-style-align-center,
+      .media-style-align-right {
+        display: flex;
+        margin-bottom: 1.5rem;
+        line-height: 0;
+      }
+      .media-style-align-left {
+        justify-content: flex-start;
+        text-align: left;
+      }
+      .media-style-align-center {
+        justify-content: center;
+        text-align: center;
+      }
+      .media-style-align-right {
+        justify-content: flex-end;
+        text-align: right;
+      }
+
+      .media-style-align-left .instagram-embed,
+      .media-style-align-left .iframe-container {
+        float: left;
+        margin-right: 1.5rem;
+      }
+
+      /* ─────────────────────── YouTube Embed ─────────────────────── */
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        margin-bottom: 1rem;
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* ─────────────────────── Instagram Embed ─────────────────────── */
+      .instagram-embed {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        line-height: 0;
+      }
+      .instagram-embed.reel .iframe-container {
+        width: 70%;
+        max-width: 400px;
+        height: 700px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 1rem;
+      }
+      .instagram-embed.post .iframe-container {
+        width: 70%;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 1rem;
+      }
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-f6D6TMGS.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DTPBRWTz.css">
+  </head>
+  <body>
+    <noscript> You need to enable JavaScript to run this app </noscript>
+    <div id="root"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
