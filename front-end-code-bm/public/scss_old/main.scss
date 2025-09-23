@@ -1,0 +1,32 @@
+// @use "sass:meta";
+// @import "/fonts/fonts.css";
+// @import "/fonts/font-icons.css";
+// @import "/css/bootstrap.min.css";
+// @import "/css/swiper-bundle.min.css";
+// @import "/css/animate.css";
+// @include meta.load-css("app.scss");
+// @include meta.load-css("rtl.scss");
+// @include meta.load-css("custom.scss");
+// @import "./brand.scss";
+// @import "./admin.scss";
+// // @import "photoswipe/dist/photoswipe.css";
+// // @import "rc-slider/assets/index.css";
+
+// 1. ✅ All @use at the top
+@use "sass:meta";
+
+// 2. ✅ All Sass @include calls right after @use
+@include meta.load-css("app.scss");
+@include meta.load-css("rtl.scss");
+@include meta.load-css("custom.scss");
+
+// 3. ✅ Then legacy Sass @import (SCSS files)
+@import "./brand.scss";
+@import "./admin.scss";
+
+// 4. ✅ Finally, pure CSS @imports (ok to use here)
+@import "/fonts/fonts.css";
+@import "/fonts/font-icons.css";
+@import "/css/bootstrap.min.css";
+@import "/css/swiper-bundle.min.css";
+@import "/css/animate.css";

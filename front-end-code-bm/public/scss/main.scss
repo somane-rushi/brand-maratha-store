@@ -1,0 +1,29 @@
+// @use "sass:meta";
+// @import "/fonts/fonts.css";
+// @import "/fonts/font-icons.css";
+// @import "/css/bootstrap.min.css";
+// @import "/css/swiper-bundle.min.css";
+// @import "/css/animate.css";
+// @include meta.load-css("app.scss");
+// @include meta.load-css("rtl.scss");
+// @include meta.load-css("custom.scss");
+// @import "./brand.scss";
+// @import "./admin.scss";
+// // @import "photoswipe/dist/photoswipe.css";
+// // @import "rc-slider/assets/index.css";
+
+// ✅ 1. ALL @use must come first
+@use "sass:meta";
+@use "./brand.scss";
+
+// ✅ 2. THEN you can use mixins
+@include meta.load-css("app.scss");
+@include meta.load-css("rtl.scss");
+@include meta.load-css("custom.scss");
+
+// ✅ 3. THEN CSS imports (if still needed for browser support)
+@import "/fonts/fonts.css";
+@import "/fonts/font-icons.css";
+@import "/css/bootstrap.min.css";
+@import "/css/swiper-bundle.min.css";
+@import "/css/animate.css";

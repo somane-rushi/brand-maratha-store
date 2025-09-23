@@ -1,0 +1,61 @@
+.typ-flex-admin {
+    display: flex;
+    .typ-admin-dashbord {
+        width: 85%;
+        margin-left: auto;
+        padding: 80px 0;
+        .typ-admin-heading{
+            margin-bottom: 20px;
+        }
+        .typ-small-heading{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .send-wrap{
+            max-width: 500px;
+            margin: auto;
+        }
+    }
+    .upload-image {
+        font-family: "Albert Sans", sans-serif;
+        border: 1px solid var(--line);
+        outline: 0;
+        box-shadow: none;
+        font-size: 14px;
+        line-height: 24px;
+        border-radius: 3px;
+        padding: 12px 18px;
+        width: 100%;
+        background: var(--white);
+        color: var(--text-2);
+        font-weight: 400;
+    }
+}
+.sticky-sidebar{
+    position: fixed;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: darkblue;
+    height: 100vh;
+}
+.login-section{
+    padding: 100px 0;
+    .typ-login-form{
+        border: 1px solid #eee;
+        padding: 12px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: auto;
+    }
+    .typ-footer-form{
+        padding: 10px 0;
+        border-top: 1px solid #333;
+        margin-top: 12px;
+        text-align: center;
+    }
+}
+.typ-mb-20{
+    margin-bottom: 20px;
+}
