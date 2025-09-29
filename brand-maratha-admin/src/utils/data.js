@@ -114,7 +114,7 @@ export const standardColors = [
     'Silver',
     'Tan',
     'Teal',
-    'Voilet',
+    'Violet',
     'White',
     'Yellow',
     'N/A'
