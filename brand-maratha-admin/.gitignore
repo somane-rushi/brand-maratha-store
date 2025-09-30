@@ -20,3 +20,6 @@ Thumbs.db
 # IDE/editor settings
 .vscode/
 .idea/
+
+# Build output
+/build/
