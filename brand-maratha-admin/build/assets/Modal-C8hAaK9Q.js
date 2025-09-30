@@ -1,2 +1,0 @@
-import{j as o}from"./index-BvPm6kUv.js";import{C as i,a as n,b as c}from"./CModalHeader-DevG9odU.js";import{C as t,a as C}from"./CModalTitle-oFIpzyPe.js";import{C as a}from"./CButton-CnoTVdhu.js";const M=({visible:s,onClose:r,onConfirm:l,title:d,message:e})=>o.jsxs(i,{visible:s,onClose:r,children:[o.jsx(n,{children:o.jsx(t,{children:d})}),o.jsx(c,{children:e}),o.jsxs(C,{children:[o.jsx(a,{color:"secondary",onClick:r,children:"Cancel"}),o.jsx(a,{color:"danger",onClick:l,children:"Ok"})]})]});export{M};
-//# sourceMappingURL=Modal-C8hAaK9Q.js.map
