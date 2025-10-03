@@ -286,6 +286,7 @@ export default function Nav({ isArrow = true, textColor = "", Linkfs = "" }) {
                                                             "Foot Ware",
                                                             "Saree",
                                                             "Accessories",
+                                                            "New Footwear"
                                                         ];
                                                         const aIndex =
                                                             categoryOrder.indexOf(
@@ -748,6 +749,7 @@ export default function Nav({ isArrow = true, textColor = "", Linkfs = "" }) {
                                                             "Foot Ware",
                                                             "Saree",
                                                             "Accessories",
+                                                            "New Footwear"
                                                         ];
                                                         const aIndex =
                                                             categoryOrder.indexOf(
