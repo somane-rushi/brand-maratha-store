@@ -85,92 +85,92 @@
 // }
 
 {
-    /* <div className="collection-item-v4 lg hover-img">
-                    <div className="collection-inner">
-                        <Link href="#" className="collection-image img-style">
-                            <Image
-                                className="lazyload"
-                                // src={`${_url}/${subcategory.image}`}
-                                src="https://brand-maratha.vercel.app/images/brand-maratha/products/essential-basic.jpg"
-                                alt="image"
-                                width={600}
-                                height={771}
-                            />
-                        </Link>
-                        <div className="collection-content wow fadeInUp">
-                            <p className="subheading text_white">
-                                Up to 30% off
-                            </p>
-                            <h5 className="heading text_white">
-                                Essential Basics
-                            </h5>
-                            <Link
-                                href={`/shop-collection-sub`}
-                                className="tf-btn style-3 fw-6 btn-light-icon animate-hover-btn"
-                            >
-                                <span>Shop now</span>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+    // /* <div className="collection-item-v4 lg hover-img">
+    //                 <div className="collection-inner">
+    //                     <Link href="#" className="collection-image img-style">
+    //                         <Image
+    //                             className="lazyload"
+    //                             // src={`${_url}/${subcategory.image}`}
+    //                             src="https://brand-maratha.vercel.app/images/brand-maratha/products/essential-basic.jpg"
+    //                             alt="image"
+    //                             width={600}
+    //                             height={771}
+    //                         />
+    //                     </Link>
+    //                     <div className="collection-content wow fadeInUp">
+    //                         <p className="subheading text_white">
+    //                             Up to 30% off
+    //                         </p>
+    //                         <h5 className="heading text_white">
+    //                             Essential Basics
+    //                         </h5>
+    //                         <Link
+    //                             href={`/shop-collection-sub`}
+    //                             className="tf-btn style-3 fw-6 btn-light-icon animate-hover-btn"
+    //                         >
+    //                             <span>Shop now</span>
+    //                         </Link>
+    //                     </div>
+    //                 </div>
+    //             </div>
 
-                <div className="collection-item-v4 lg hover-img">
-                    <div className="collection-inner">
-                        <Link href="#" className="collection-image img-style">
-                            <Image
-                                className="lazyload"
-                                // src={`${_url}/${subcategory.image}`}
-                                src="https://brand-maratha.vercel.app/images/brand-maratha/products/essential-basic.jpg"
-                                alt="image"
-                                width={600}
-                                height={771}
-                            />
-                        </Link>
-                        <div className="collection-content wow fadeInUp">
-                            <p className="subheading text_white">
-                                Up to 30% off
-                            </p>
-                            <h5 className="heading text_white">
-                                Athleisure Wear
-                            </h5>
-                            <Link
-                                href={`/shop-collection-sub`}
-                                className="tf-btn style-3 fw-6 btn-light-icon animate-hover-btn"
-                            >
-                                <span>Shop now</span>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+    //             <div className="collection-item-v4 lg hover-img">
+    //                 <div className="collection-inner">
+    //                     <Link href="#" className="collection-image img-style">
+    //                         <Image
+    //                             className="lazyload"
+    //                             // src={`${_url}/${subcategory.image}`}
+    //                             src="https://brand-maratha.vercel.app/images/brand-maratha/products/essential-basic.jpg"
+    //                             alt="image"
+    //                             width={600}
+    //                             height={771}
+    //                         />
+    //                     </Link>
+    //                     <div className="collection-content wow fadeInUp">
+    //                         <p className="subheading text_white">
+    //                             Up to 30% off
+    //                         </p>
+    //                         <h5 className="heading text_white">
+    //                             Athleisure Wear
+    //                         </h5>
+    //                         <Link
+    //                             href={`/shop-collection-sub`}
+    //                             className="tf-btn style-3 fw-6 btn-light-icon animate-hover-btn"
+    //                         >
+    //                             <span>Shop now</span>
+    //                         </Link>
+    //                     </div>
+    //                 </div>
+    //             </div>
 
-                <div className="collection-item-v4 lg hover-img">
-                    <div className="collection-inner">
-                        <Link href="#" className="collection-image img-style">
-                            <Image
-                                className="lazyload"
-                                // src={`${_url}/${subcategory.image}`}
-                                src="https://brand-maratha.vercel.app/images/brand-maratha/products/essential-basic.jpg"
-                                alt="image"
-                                width={600}
-                                height={771}
-                            />
-                        </Link>
-                        <div className="collection-content wow fadeInUp">
-                            <p className="subheading text_white">
-                                Up to 30% off
-                            </p>
-                            <h5 className="heading text_white">
-                                Seasonal Favorites
-                            </h5>
-                            <Link
-                                href={`/shop-collection-sub`}
-                                className="tf-btn style-3 fw-6 btn-light-icon animate-hover-btn"
-                            >
-                                <span>Shop now</span>
-                            </Link>
-                        </div>
-                    </div>
-                </div> */
+    //             <div className="collection-item-v4 lg hover-img">
+    //                 <div className="collection-inner">
+    //                     <Link href="#" className="collection-image img-style">
+    //                         <Image
+    //                             className="lazyload"
+    //                             // src={`${_url}/${subcategory.image}`}
+    //                             src="https://brand-maratha.vercel.app/images/brand-maratha/products/essential-basic.jpg"
+    //                             alt="image"
+    //                             width={600}
+    //                             height={771}
+    //                         />
+    //                     </Link>
+    //                     <div className="collection-content wow fadeInUp">
+    //                         <p className="subheading text_white">
+    //                             Up to 30% off
+    //                         </p>
+    //                         <h5 className="heading text_white">
+    //                             Seasonal Favorites
+    //                         </h5>
+    //                         <Link
+    //                             href={`/shop-collection-sub`}
+    //                             className="tf-btn style-3 fw-6 btn-light-icon animate-hover-btn"
+    //                         >
+    //                             <span>Shop now</span>
+    //                         </Link>
+    //                     </div>
+    //                 </div>
+    //             </div> */
 }
 
 // "use client";
@@ -187,19 +187,22 @@ export default function Collections2() {
             title: "Traditional Marathi ",
             subtitle: "(TAM)",
             query: "tam",
-            image: "https://brand-maratha.vercel.app/images/brand-maratha/products/athleisure-wear.jpg",
+            image: "https://api.brandmaratha.store/uploads/new-group/tam.png",
+            // image: "https://brand-maratha.vercel.app/images/brand-maratha/products/athleisure-wear.jpg",
         },
         {
             title: "Look-a-Like Marathi ",
             subtitle: "(LAM)",
             query: "lam",
-            image: "https://brand-maratha.vercel.app/images/brand-maratha/products/athleisure-wear.jpg",
+            image: "https://api.brandmaratha.store/uploads/new-group/lam.png",
+            //image: "https://brand-maratha.vercel.app/images/brand-maratha/products/athleisure-wear.jpg",
         },
         {
             title: "Re-Imagined Marathi ",
             subtitle: "(RIM)",
             query: "rim",
-            image: "https://brand-maratha.vercel.app/images/brand-maratha/products/athleisure-wear.jpg",
+            image: "https://api.brandmaratha.store/uploads/new-group/rim.png",
+            //image: "https://brand-maratha.vercel.app/images/brand-maratha/products/athleisure-wear.jpg",
         },
     ];
 

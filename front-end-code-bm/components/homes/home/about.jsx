@@ -45,7 +45,7 @@ const About = ({ headingKey, contentKey, buttonKey }) => {
                                     <div className="article-btn">
                                         <a
                                             className="tf-btn btn-line line-height-normal fw-6 about-btn"
-                                            href="#"
+                                            href="https://brandmaratha.store/about-us"
                                         >
                                             {t(buttonKey, language)}
                                             <i className="icon icon-arrow1-top-left"></i>
